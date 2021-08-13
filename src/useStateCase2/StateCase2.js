@@ -1,12 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const StateCase2 = () => {
-    let counter = 0;
+    const [counter, setCounter] = useState(0);
 
     const increment = () => {
-        counter = counter + 1;
-        //counter have value but can't display on UI
-        console.log(counter);
+        setCounter(counter + 1);
     };
 
     return (
